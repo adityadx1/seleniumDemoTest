@@ -9,10 +9,25 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Suite</th></tr>
-<tr><td><a href="#t0">Basic test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">1,549</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Basic test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">914</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Basic test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">TestPlan</td><td><a href="#m0">submitForm</a></td><td rowspan="1">1604725622805</td><td rowspan="1">1515</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Basic test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">TestPlan</td><td><a href="#m0">submitForm</a></td><td rowspan="1">1604754572274</td><td rowspan="1">872</td></tr></tbody>
 </table>
-<h2>Basic test</h2><h3 id="m0">TestPlan#submitForm</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Basic test</h2><h3 id="m0">TestPlan#submitForm</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=86.0.4240.111)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;aditya-x550cc&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.4.74-1-MANJARO&apos;, java.version: &apos;1.8.0_265&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.111, chrome: {chromedriverVersion: 86.0.4240.111 (b8c36128a06e..., userDataDir: /tmp/.org.chromium.Chromium...}, goog:chromeOptions: {debuggerAddress: localhost:38711}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: b4e2405ce6cef63c04bfd76790436e5f
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at TestPlan.submitForm(TestPlan.java:18)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
